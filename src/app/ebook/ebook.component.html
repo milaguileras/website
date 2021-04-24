@@ -1,0 +1,71 @@
+<div class="container">
+    <h1>Baixe o Ebook</h1>
+    <form #userForm="ngForm" *ngIf="!submitted"  (ngsubmit)="onSubmit()" novalidate>
+
+
+        <div class="form-group w-25">
+            <label>Nome</label>
+            <input type="text" required #name="ngModel" 
+            [class.is-invalid]= "name.invalid && name.touched" class="form-control" 
+            name="userName" [(ngModel)]="leadModel.userName">
+            <small class="text-danger" [class.d-none]="name.valid || name.untouched">Digite seu nome</small>
+        </div>
+
+        <div class="form-group w-25">
+            <label>Email</label>
+            <input type="email" required #email="ngModel" 
+            [class.is-invalid]="email.invalid && email.touched" class="form-control" 
+            name="email" [(ngModel)]="leadModel.email">
+            <small class="text-danger" [class.d-none]="email.valid || email.untouched">Digite seu email</small>
+        </div>
+
+        <div>
+            <label>O que você tem interesse em aprender?</label>
+        </div>
+        <div>
+            <label class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="type1" [(ngModel)]="leadModel.type1">
+                Técnica Básica
+            </label>
+
+            <label class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="type2" [(ngModel)]="leadModel.type2">
+                Técnica Intermediária
+            </label>
+
+            <label class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="type3" [(ngModel)]="leadModel.type3">
+                Técnica Avançada
+            </label>
+
+            <label class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="type4" [(ngModel)]="leadModel.type4">
+                Dicas e Macetes
+            </label>
+
+            <label class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="type5" [(ngModel)]="leadModel.type5">
+                Acabamentos
+            </label>
+
+            <label class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="type6" [(ngModel)]="leadModel.type5">
+                Tutorial de Bolsas
+            </label>
+
+            <label class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="type7" [(ngModel)]="leadModel.type5">
+                Tutorial de Acessórios 
+            </label>
+
+            <label class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="type8" [(ngModel)]="leadModel.type5">
+                Tutorial de Roupas
+            </label>
+
+
+        </div>
+
+        <button [disabled]="userForm.form.invalid" class="btn btn-outline-secondary" type="submit">Enviar</button>
+    </form>
+</div>

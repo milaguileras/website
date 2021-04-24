@@ -1,0 +1,10 @@
+<mat-toolbar class="menu" class="mat-elevation-z8">
+   <a mat-button routerLink='/inicio'> <span class="nome"><mat-icon>eco</mat-icon>Simone Carvalho</span></a>
+
+    <div class="spacer"></div>
+
+    <a (click)="toHome()" mat-button routerLink='/inicio'>Início</a>
+    <a (click)="toEbook()" mat-button routerLink='/ebook'routerLinkActive="active" mat-button>Ebook</a>
+    <a mat-button>Aulas</a>
+    <a mat-button>Contato</a>
+</mat-toolbar>

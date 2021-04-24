@@ -1,0 +1,18 @@
+/*Fonts*/
+@import '../../assets/scss/modules/_fonts.scss';
+
+
+.spacer {
+    flex: 1 1 auto
+}
+.menu {
+    background-color: whitesmoke ;
+    font-size:larger;
+    font-family: 'Mermaid'; }
+
+.nome {
+    color:#742340;
+    font-family: 'Mermaid';
+    font-size:0.8cm;
+}
+
