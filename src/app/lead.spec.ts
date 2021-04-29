@@ -7,3 +7,4 @@ describe('Lead', () => {
     expect(new Lead("","",true,true,true,true,true,true,true,true,true)).toBeTruthy();
   });
 });
+ 
