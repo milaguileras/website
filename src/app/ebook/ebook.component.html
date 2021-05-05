@@ -1,21 +1,38 @@
-
 <div class="container">
     <h1>Baixe o Ebook</h1>
-    <form action="https://hooks.zapier.com/hooks/catch/9995239/ovqo81i/"
-    #userForm="ngForm" *ngIf="!submitted"  (ngsubmit)="onSubmit()" novalidate>
-
+    <form action="https://sheetdb.io/api/v1/shs6y770cx24r" method="POST">
 
         <div class="form-group w-25">
-            <label>Nome</label>
-            <input type="text" required #name="ngModel" 
+             Nome: <input name="data[name]" required [class.is-invalid]= "name.invalid && name.touched" class="form-control" 
+            type="text" required #name="ngModel" placeholder="nome" 
             [class.is-invalid]= "name.invalid && name.touched" class="form-control" 
             name="userName" [(ngModel)]="leadModel.userName">
             <small class="text-danger" [class.d-none]="name.valid || name.untouched">Digite seu nome</small>
         </div>
 
         <div class="form-group w-25">
+            Email: <input name="data[email]" type="email" required #email="ngModel" placeholder="email"
+            [class.is-invalid]="email.invalid && email.touched" class="form-control" 
+            name="email" [(ngModel)]="leadModel.email">
+            <small class="text-danger" [class.d-none]="email.valid || email.untouched">Digite seu email</small>
+        </div>
+
+        
+  <button type="submit">Submit</button>
+      </form>
+      
+      
+
+
+
+
+
+      <!----  <div class="form-group w-25">
+    
+
+        <div class="form-group w-25">
             <label>Email</label>
-            <input type="email" required #email="ngModel" 
+            <input name="email" type="email" required #email="ngModel" 
             [class.is-invalid]="email.invalid && email.touched" class="form-control" 
             name="email" [(ngModel)]="leadModel.email">
             <small class="text-danger" [class.d-none]="email.valid || email.untouched">Digite seu email</small>
@@ -69,5 +86,5 @@
         </div>
 
         <button [disabled]="userForm.form.invalid" class="btn btn-outline-secondary" type="submit">Enviar</button>
-    </form>
-</div>
+    </form> !-->
+
