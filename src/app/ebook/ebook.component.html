@@ -1,90 +1,12 @@
-<div class="container">
-    <h1>Baixe o Ebook</h1>
-    <form action="https://sheetdb.io/api/v1/shs6y770cx24r" method="POST">
+<div>
+    <div>
+    Nome: <input [(ngModel)]="name" required>
+  
+   
+    Email: <input [(ngModel)]="email">
+    <button type="submit" (click)="onPost()">Submit</button>
+    </div>
+  
+</div>
 
-        <div class="form-group w-25">
-             Nome: <input name="data[name]" required [class.is-invalid]= "name.invalid && name.touched" class="form-control" 
-            type="text" required #name="ngModel" placeholder="nome" 
-            [class.is-invalid]= "name.invalid && name.touched" class="form-control" 
-            name="userName" [(ngModel)]="leadModel.userName">
-            <small class="text-danger" [class.d-none]="name.valid || name.untouched">Digite seu nome</small>
-        </div>
-
-        <div class="form-group w-25">
-            Email: <input name="data[email]" type="email" required #email="ngModel" placeholder="email"
-            [class.is-invalid]="email.invalid && email.touched" class="form-control" 
-            name="email" [(ngModel)]="leadModel.email">
-            <small class="text-danger" [class.d-none]="email.valid || email.untouched">Digite seu email</small>
-        </div>
-
-        
-  <button type="submit">Submit</button>
-      </form>
-      
-      
-
-
-
-
-
-      <!----  <div class="form-group w-25">
-    
-
-        <div class="form-group w-25">
-            <label>Email</label>
-            <input name="email" type="email" required #email="ngModel" 
-            [class.is-invalid]="email.invalid && email.touched" class="form-control" 
-            name="email" [(ngModel)]="leadModel.email">
-            <small class="text-danger" [class.d-none]="email.valid || email.untouched">Digite seu email</small>
-        </div>
-
-        <div>
-            <label>O que você tem interesse em aprender?</label>
-        </div>
-        <div>
-            <label class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" name="type1" [(ngModel)]="leadModel.type1">
-                Técnica Básica
-            </label>
-
-            <label class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" name="type2" [(ngModel)]="leadModel.type2">
-                Técnica Intermediária
-            </label>
-
-            <label class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" name="type3" [(ngModel)]="leadModel.type3">
-                Técnica Avançada
-            </label>
-
-            <label class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" name="type4" [(ngModel)]="leadModel.type4">
-                Dicas e Macetes
-            </label>
-
-            <label class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" name="type5" [(ngModel)]="leadModel.type5">
-                Acabamentos
-            </label>
-
-            <label class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" name="type6" [(ngModel)]="leadModel.type5">
-                Tutorial de Bolsas
-            </label>
-
-            <label class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" name="type7" [(ngModel)]="leadModel.type5">
-                Tutorial de Acessórios 
-            </label>
-
-            <label class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" name="type8" [(ngModel)]="leadModel.type5">
-                Tutorial de Roupas
-            </label>
-
-
-        </div>
-
-        <button [disabled]="userForm.form.invalid" class="btn btn-outline-secondary" type="submit">Enviar</button>
-    </form> !-->
-
+  

@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { Lead } from './lead';
-import { EnrollmentService } from './enrollment.service'
-
 
 
 @Component({
