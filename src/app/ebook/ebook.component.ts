@@ -1,12 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import axios from 'axios'
 
-/*SheetDB.read('https://sheetdb.io/api/v1/58f61be4dda40', {}).then(function(result){
-  console.log(result);
-}, function(error){
-  console.log(error);
-});*/
-
 
 
 @Component({
@@ -20,7 +14,7 @@ export class EbookComponent  {
   email;
 data;
 onPost(){
-  this.submitted = true
+  
   console.log("success")
   console.log(this.name)
   console.log(this.email)
@@ -31,6 +25,7 @@ onPost(){
   axios.post('https://sheetdb.io/api/v1/shs6y770cx24r', this.data)
     .then( response => {
         console.log(response.data);
+        this.submitted = true
     });
     // Get all data
     // axios.get('https://sheetdb.io/api/v1/shs6y770cx24r')
