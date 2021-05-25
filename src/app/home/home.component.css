@@ -1,0 +1,6 @@
+@import '../../assets/scss/modules/_fonts.scss';
+
+
+.h1 {
+    font-family: 'Mermaid';
+}

@@ -12,6 +12,8 @@ import { HomeComponent } from './home/home.component';
 import { EbookComponent } from './ebook/ebook.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
 
 
 @NgModule({
@@ -30,6 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     FormsModule,
     HttpClientModule,
+    IvyCarouselModule,
     ],
   providers: [],
   bootstrap: [AppComponent]

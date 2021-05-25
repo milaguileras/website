@@ -8,19 +8,22 @@ import axios from 'axios'
   templateUrl: './ebook.component.html',
   styleUrls: ['./ebook.component.css']
 })
-export class EbookComponent  {
+export class EbookComponent  { 
   submitted = false;
   name;
   email;
-data;
+  tecnicaBasica;
+  data;
 onPost(){
   
   console.log("success")
   console.log(this.name)
   console.log(this.email)
+  console.log(this.tecnicaBasica)
   this.data = {
    name: this.name,
-   email: this.email
+   email: this.email,
+   tecnicaBasica: this.tecnicaBasica
   }
   axios.post('https://sheetdb.io/api/v1/shs6y770cx24r', this.data)
     .then( response => {
