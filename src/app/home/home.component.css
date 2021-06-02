@@ -4,3 +4,29 @@
 .h1 {
     font-family: 'Mermaid';
 }
+
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: #eef8ff;
+}
+.box{
+    width: 300px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.slide-img{
+    height: 450px;
+    position: relative;
+}
+.slide-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    box-sizing:border-box ;
+}

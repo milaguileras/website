@@ -8,13 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   images = [
-    {path: "assets/images/azul.JPG"}, 
-    {path: "assets/images/branco_noiva.png"},
-    {path: "assets/images/marrom.png"},
-    {path: "assets/images/rosa_vermelho.JPG"},
-    {path: "assets/images/vermelho_longo.JPG"},
-    {path: "assets/images/vermelho_manga_ombro.png"},
-    {path: "assets/images/vermelho.JPG"},
+    {path: "assets/images/Fotos01.jpg"}, 
+    {path: "assets/images/Fotos02.jpg"},
+    {path: "assets/images/Fotos03.jpg"},
+    {path: "assets/images/Fotos04.jpg"},
+    {path: "assets/images/Fotos05.jpg"},
+    {path: "assets/images/Fotos06.jpg"},
+    {path: "assets/images/Fotos07.jpg"},
+    {path: "assets/images/Fotos08.jpg"},
+    {path: "assets/images/Fotos09.jpg"},
   ]
   constructor() { }
 
@@ -22,3 +24,4 @@ export class HomeComponent implements OnInit {
   }
 
 }
+
