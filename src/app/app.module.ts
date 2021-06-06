@@ -13,6 +13,7 @@ import { EbookComponent } from './ebook/ebook.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 
 
@@ -22,7 +23,8 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    EbookComponent
+    EbookComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
