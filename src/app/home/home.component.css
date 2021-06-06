@@ -1,7 +1,7 @@
 @import '../../assets/scss/modules/_fonts.scss';
 
 
-.h1 {
+h1 {
     font-family: 'Mermaid';
 }
 
@@ -10,6 +10,7 @@ body{
     padding: 0px;
     background-color: #eeebe762;
 }
+
 .box{
     width: 300px;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
