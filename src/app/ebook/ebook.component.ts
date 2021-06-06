@@ -10,20 +10,35 @@ import axios from 'axios'
 })
 export class EbookComponent  { 
   submitted = false;
-  name;
+  nome;
   email;
   tecnicaBasica;
+  tecnicaIntermediaria;
+  tecnicaAvancada;
+  dicasEmacetes;
+  acabamentos;
+  tutorialDeBolsas;
+  tutorialDeAcessorios;
+  tutorialDeRoupas;
   data;
 onPost(){
   
   console.log("success")
-  console.log(this.name)
+  console.log(this.nome)
   console.log(this.email)
   console.log(this.tecnicaBasica)
+
   this.data = {
-   name: this.name,
+   name: this.nome,
    email: this.email,
-   tecnicaBasica: this.tecnicaBasica
+   tecnicaBasica: this.tecnicaBasica,
+   tecnicaIntermediaria: this.tecnicaIntermediaria,
+   tecnicaAvancada: this.tecnicaAvancada,
+   dicasEmacetes: this.dicasEmacetes,
+   acabamentos: this.acabamentos,
+   tutorialDeBolsas: this.tutorialDeBolsas,
+   tutorialDeAcessorios: this.tutorialDeAcessorios,
+   tutorialDeRoupas: this.tutorialDeRoupas,
   }
   axios.post('https://sheetdb.io/api/v1/shs6y770cx24r', this.data)
     .then( response => {

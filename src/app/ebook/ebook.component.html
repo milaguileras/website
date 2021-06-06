@@ -3,18 +3,54 @@
 
 <form>
 <div class="form-group w-25">
-    Nome:<input [(ngModel)]="name" name="name">
+    Nome:<input [(ngModel)]="nome" name="nome">
 </div>
   
     <div class="form-group w-25">
     Email: <input [(ngModel)]="email" name="email">
     </div>
 
-    <div>
+    <div> 
+        <label>O que você tem interesse em aprender?</label>
         <label class="form-check mb-3">
             <input class="form-check-input" type="checkbox" name="tecnicaBasica" [(ngModel)]="tecnicaBasica">
             Técnica Básica
         </label>
+        <label class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" name="tecnicaIntermediaria" [(ngModel)]="tecnicaIntermediaria">
+            Técnica Intermediária
+        </label>
+
+        <label class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" name="tecnicaAvancada" [(ngModel)]="tecnicaAvancada">
+            Técnica Avançada
+        </label>
+
+        <label class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" name="dicasEmacetes" [(ngModel)]="dicasEmacetes">
+            Dicas e Macetes
+        </label>
+
+        <label class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" name="acabamentos" [(ngModel)]="acabamentos">
+            Acabamentos
+        </label>
+
+        <label class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" name="tutorialDeBolsas" [(ngModel)]="tutorialDeBolsas">
+            Tutorial de Bolsas
+        </label>
+
+        <label class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" name="tutorialDeAcessorios" [(ngModel)]="tutorialDeAcessorios">
+            Tutorial de Acessórios 
+        </label>
+
+        <label class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" name="tutorialDeRoupas" [(ngModel)]="tutorialDeRoupas">
+            Tutorial de Roupas
+        </label>
+
     </div>
     
     <button type="submit" (click)="onPost()" class="btn btn-outline-secondary">Submit</button>
