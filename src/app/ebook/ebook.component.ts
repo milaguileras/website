@@ -21,6 +21,7 @@ export class EbookComponent  {
   tutorialDeAcessorios;
   tutorialDeRoupas;
   data;
+
 onPost(){
   
   console.log("success")
@@ -29,7 +30,7 @@ onPost(){
   console.log(this.tecnicaBasica)
 
   this.data = {
-   name: this.nome,
+   nome: this.nome,
    email: this.email,
    tecnicaBasica: this.tecnicaBasica,
    tecnicaIntermediaria: this.tecnicaIntermediaria,
