@@ -12,8 +12,10 @@ import { HomeComponent } from './home/home.component';
 import { EbookComponent } from './ebook/ebook.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
+//import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { YoutubeComponent } from './youtube/youtube.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -24,7 +26,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
     NavbarComponent,
     HomeComponent,
     EbookComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    YoutubeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     MatIconModule,
     FormsModule,
     HttpClientModule,
-    IvyCarouselModule,
+    //IvyCarouselModule,
     ],
   providers: [],
   bootstrap: [AppComponent]

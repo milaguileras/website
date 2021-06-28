@@ -14,7 +14,7 @@ export class EbookComponent  {
   email;
   tecnicaBasica;
   tecnicaIntermediaria;
-  tecnicaAvancada;
+  tecnicaAvancada; 
   dicasEmacetes;
   acabamentos;
   tutorialDeBolsas;
