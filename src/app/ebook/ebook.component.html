@@ -6,13 +6,14 @@
 
 <form>
 <div class="form-group w-25">
-    Nome:<input [(ngModel)]="nome" name="nome" class="form-control-md" placeholder="Nome" required>
+    Nome:<input [(ngModel)]="nome" name="nome" class="form-control-md" placeholder="Nome" value="" required>
 </div>
   
     <div class="form-group w-25">
     Email: <input [(ngModel)]="email" name="email" class="form-control-md" placeholder="nome@exemplo.com" required>
     </div>
-
+    <div class="invalid-feedback"></div>
+    Digite seu email.
     <div> 
         <label>O que você tem interesse em aprender?</label>
         <label class="form-check mb-3">

@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./youtube.component.css']
 })
 export class YoutubeComponent implements OnInit {
+  
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() { 
+    
   }
+
+  ngOnInit() {}
 
 }
