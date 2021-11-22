@@ -1,5 +1,19 @@
 @import '../../assets/scss/modules/_fonts.scss';
 
+.head{
+    padding-top: 2cm;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.container{
+    padding-top: 1cm;
+}
+
 .blog .carousel-indicators {
 	left: 0;
 	top: auto;
@@ -18,3 +32,4 @@
 .blog .carousel-indicators .active {
 background: #707070;
 }
+
